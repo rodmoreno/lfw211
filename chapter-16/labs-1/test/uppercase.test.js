@@ -2,7 +2,7 @@
 
 const uppercase = require('../uppercase')
 
-test('throw when inputs are not numbers', async () => {
+test('throw when input is string', async () => {
   expect(() => uppercase(1)).toThrowError(
     Error('input must be a string')
   )
